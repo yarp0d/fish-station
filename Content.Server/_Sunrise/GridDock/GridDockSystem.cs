@@ -75,7 +75,7 @@ public sealed class GridDockSystem : EntitySystem
     // Fish-start
     private void OnStationPostInitMultiple(EntityUid uid, SpawnAdditionalGridsAndDockToStationComponent component, StationPostInitEvent args)
     {
-        var target = _station.GetLargestGrid(Comp<StationDataComponent>(uid));
+        var target = _station.GetLargestGrid(uid);
         if (target == null)
         {
             Log.Error($"GridDockSystem: No target station grid found for {ToPrettyString(uid)}. Aborting.");
