@@ -175,7 +175,7 @@
   - DiseaseEvolutionCategory
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 5
 
 - type: listing
   id: InfectChance
@@ -189,7 +189,7 @@
   - DiseaseEvolutionCategory
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 3
 
 - type: listing
   id: Shield
@@ -203,7 +203,7 @@
   - DiseaseEvolutionCategory
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 6
 
 - type: listing
   id: Lethal
@@ -217,5 +217,5 @@
   - DiseaseEvolutionCategory
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 5
 #Sunrise-End

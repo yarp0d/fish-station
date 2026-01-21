@@ -69,13 +69,8 @@ public sealed class DiseaseRoleSystem : SharedDiseaseRoleSystem
     {
         if (TryComp<DiseaseRoleComponent>(args.Performer, out var component))
         {
-            if (TryRemoveMoney(args.Performer, component.InfectCost))
-                OnInfect(args, 1.0f);
-            else
-            {
-                _popup.PopupEntity(Loc.GetString("disease-not-enough-evolution-points"), args.Performer, PopupType.Medium);
-                return;
-            }
+            OnInfect(args, 1.0f);
+            _popup.PopupEntity(Loc.GetString("disease-infect-success"), args.Performer, PopupType.Medium);
 
             // Play Initial Infected antag audio (only for the disease player)
             _audio.PlayGlobal("/Audio/Ambience/Antag/zombie_start.ogg", args.Performer);

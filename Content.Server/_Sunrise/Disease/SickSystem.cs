@@ -34,6 +34,8 @@ using Content.Shared.Speech.Muting;
 using Content.Shared.Store.Components;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Chemistry.Components;
+using Content.Shared.Inventory;
+using Content.Shared.Zombies;
 namespace Content.Server._Sunrise.Disease;
 public sealed class SickSystem : SharedSickSystem
 {
@@ -223,7 +225,7 @@ public sealed class SickSystem : SharedSickSystem
                             if (!HasComp<SleepyComponent>(uid))
                             {
                                 var c = AddComp<SleepyComponent>(uid);
-                                EntityManager.EntitySysManager.GetEntitySystem<SleepySystem>().SetNarcolepsy(uid, new Vector2(10, 30), new Vector2(300, 600), c);
+                                EntityManager.EntitySysManager.GetEntitySystem<SleepySystem>().SetNarcolepsy(uid, new Vector2(60, 80), new Vector2(8, 12), c);
                             }
                             break;
                         case "Muted":
@@ -273,7 +275,11 @@ public sealed class SickSystem : SharedSickSystem
                             {
                                 if (HasComp<HumanoidAppearanceComponent>(entity) && !HasComp<SickComponent>(entity) && !HasComp<DiseaseImmuneComponent>(entity))
                                 {
-                                    OnInfected(entity, component.owner, disease.CoughSneezeInfectChance);
+                                    var ev = new ZombificationResistanceQueryEvent(SlotFlags.HEAD | SlotFlags.MASK | SlotFlags.OUTERCLOTHING);
+                                    RaiseLocalEvent(entity, ev);
+
+                                    if (_robustRandom.Prob(ev.TotalCoefficient))
+                                        OnInfected(entity, component.owner, disease.CoughSneezeInfectChance);
                                 }
                             }
                         }
@@ -291,7 +297,11 @@ public sealed class SickSystem : SharedSickSystem
                             {
                                 if (HasComp<HumanoidAppearanceComponent>(entity) && !HasComp<SickComponent>(entity) && !HasComp<DiseaseImmuneComponent>(entity))
                                 {
-                                    OnInfected(entity, component.owner, disease.CoughSneezeInfectChance);
+                                    var ev = new ZombificationResistanceQueryEvent(SlotFlags.HEAD | SlotFlags.MASK | SlotFlags.OUTERCLOTHING);
+                                    RaiseLocalEvent(entity, ev);
+
+                                    if (_robustRandom.Prob(ev.TotalCoefficient))
+                                        OnInfected(entity, component.owner, disease.CoughSneezeInfectChance);
                                 }
                             }
                         }
