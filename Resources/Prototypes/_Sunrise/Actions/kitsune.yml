@@ -62,6 +62,6 @@
     icon: { sprite: Objects/Weapons/Guns/Projectiles/magic.rsi, state: magicm_cyan }
     useDelay: 10
     itemIconStyle: NoItem
-    checkCanInteract: false
+    checkCanInteract: true
   - type: InstantAction
     event: !type:KitsuneFoxLightsActionEvent

@@ -1,4 +1,3 @@
-using Content.Shared.Actions;
 using Content.Shared._Sunrise.Kitsune;
 using Robust.Shared.Timing;
 using System.Numerics;
@@ -8,7 +7,6 @@ using Content.Shared.Damage.Systems;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Audio;
-using Content.Shared.Popups;
 
 namespace Content.Server._Sunrise.Kitsune
 {
@@ -19,7 +17,6 @@ namespace Content.Server._Sunrise.Kitsune
         [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
         [Dependency] private readonly DamageableSystem _damageable = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
-        [Dependency] private readonly SharedPopupSystem _popup = default!;
         TimeSpan castTime = TimeSpan.FromSeconds(1); // 1 second cast time
         TimeSpan lightDuration = TimeSpan.FromSeconds(90);
 
@@ -34,11 +31,10 @@ namespace Content.Server._Sunrise.Kitsune
         private void OnAction(KitsuneFoxLightsActionEvent args)
         {
             if (args.Handled) return;
-
             _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Sunrise/BloodCult/butcher.ogg"), args.Performer);
-            _popup.PopupEntity("Casting Fox Lights...", args.Performer, args.Performer);
 
-            EnsureComp<KitsuneFoxLightsComponent>(args.Performer);
+            var comp = EnsureComp<KitsuneFoxLightsComponent>(args.Performer);
+            comp.DieAt = TimeSpan.MaxValue;
 
             _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.Performer, castTime, new KitsuneFoxLightsDoAfterEvent(), args.Performer)
             {
@@ -55,9 +51,6 @@ namespace Content.Server._Sunrise.Kitsune
             if (args.Cancelled || args.Handled)
                 return;
 
-            _popup.PopupEntity("Fox Lights Cast Success!", uid, uid);
-
-            // Logic First (Visuals)
             component.DieAt = _timing.CurTime + lightDuration;
 
             if (component.Orbs.Count < 3)
@@ -77,7 +70,6 @@ namespace Content.Server._Sunrise.Kitsune
                 }
             };
             _damageable.TryChangeDamage(uid, damage, ignoreResistances: true);
-
             args.Handled = true;
         }
 

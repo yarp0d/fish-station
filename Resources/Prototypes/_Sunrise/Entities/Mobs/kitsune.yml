@@ -6,6 +6,7 @@
   - type: Damageable
     damageModifierSet: Kitsune
   - type: KitsuneTransform
+  - type: KitsuneFoxLights
   - type: ActionsContainer
   - type: ActionGrant
     actions:
