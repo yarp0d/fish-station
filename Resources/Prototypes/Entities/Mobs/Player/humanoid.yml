@@ -78,6 +78,7 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Kitsune
   randomizeName: false
   components:
     - type: GhostRole

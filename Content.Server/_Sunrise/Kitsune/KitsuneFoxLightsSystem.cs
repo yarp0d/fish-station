@@ -22,12 +22,13 @@ namespace Content.Server._Sunrise.Kitsune
         [Dependency] private readonly SharedPopupSystem _popup = default!;
         TimeSpan castTime = TimeSpan.FromSeconds(1); // 1 second cast time
         TimeSpan lightDuration = TimeSpan.FromSeconds(90);
+
         public override void Initialize()
         {
             base.Initialize();
             SubscribeLocalEvent<KitsuneFoxLightsComponent, ComponentShutdown>(OnShutdown);
             SubscribeLocalEvent<KitsuneFoxLightsActionEvent>(OnAction);
-            SubscribeLocalEvent<KitsuneFoxLightsDoAfterEvent>(OnDoAfter);
+            SubscribeLocalEvent<KitsuneFoxLightsComponent, KitsuneFoxLightsDoAfterEvent>(OnDoAfter);
         }
 
         private void OnAction(KitsuneFoxLightsActionEvent args)
@@ -35,23 +36,37 @@ namespace Content.Server._Sunrise.Kitsune
             if (args.Handled) return;
 
             _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Sunrise/BloodCult/butcher.ogg"), args.Performer);
+            _popup.PopupEntity("Casting Fox Lights...", args.Performer, args.Performer);
+
+            EnsureComp<KitsuneFoxLightsComponent>(args.Performer);
 
             _doAfter.TryStartDoAfter(new DoAfterArgs(EntityManager, args.Performer, castTime, new KitsuneFoxLightsDoAfterEvent(), args.Performer)
             {
-                BreakOnMove = true,
-                BreakOnDamage = true,
+                BreakOnMove = false,
+                BreakOnDamage = false,
                 NeedHand = false
             });
 
             args.Handled = true;
         }
 
-        private void OnDoAfter(KitsuneFoxLightsDoAfterEvent args)
+        private void OnDoAfter(EntityUid uid, KitsuneFoxLightsComponent component, KitsuneFoxLightsDoAfterEvent args)
         {
             if (args.Cancelled || args.Handled)
                 return;
 
+            _popup.PopupEntity("Fox Lights Cast Success!", uid, uid);
 
+            // Logic First (Visuals)
+            component.DieAt = _timing.CurTime + lightDuration;
+
+            if (component.Orbs.Count < 3)
+            {
+                SpawnOrbs(uid, component);
+            }
+
+            // Play Success Sound
+            _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Sunrise/BloodCult/enter_blood.ogg"), uid);
 
             // Damage the performer
             var damage = new DamageSpecifier()
@@ -63,30 +78,6 @@ namespace Content.Server._Sunrise.Kitsune
             };
             _damageable.TryChangeDamage(uid, damage, ignoreResistances: true);
 
-            // Play Success Sound
-            _audio.PlayPvs(new SoundPathSpecifier("/Audio/_Sunrise/BloodCult/enter_blood.ogg"), uid);
-
-            // Logic
-            if (TryComp<KitsuneFoxLightsComponent>(uid, out var component))
-            {
-                // Plan: Set DieAt to CurTime + 90s.
-                component.DieAt = _timing.CurTime + lightDuration;
-
-                // If orb logic handles single orb, we might want to ensure it spawns if missing?
-                // But generally "toggle" is gone. It's a cast.
-                // If we already have one, we just refreshed duration.
-                // If we don't, spawn.
-                if (component.Orbs.Count < 3)
-                {
-                    SpawnOrbs(uid, component);
-                }
-            }
-            else
-            {
-                component = EnsureComp<KitsuneFoxLightsComponent>(uid);
-                component.DieAt = _timing.CurTime + TimeSpan.FromSeconds(90);
-                SpawnOrbs(uid, component);
-            }
             args.Handled = true;
         }
 
@@ -105,8 +96,6 @@ namespace Content.Server._Sunrise.Kitsune
                 orbComp.Speed = 1f;
 
                 component.Orbs.Add(orb);
-
-                // Ensure orbit by dirtying position once? Update loop handles movement.
             }
         }
 
