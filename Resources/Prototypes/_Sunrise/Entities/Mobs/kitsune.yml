@@ -10,3 +10,12 @@
   - type: ActionGrant
     actions:
     - ActionKitsuneTransform
+  - type: TemperatureDamage
+    heatDamageThreshold: 400
+    coldDamageThreshold: 200
+    coldDamage:
+      types:
+        Cold: 0.1
+    heatDamage:
+      types:
+        Heat: 1.5
