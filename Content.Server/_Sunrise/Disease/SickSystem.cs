@@ -117,6 +117,9 @@ public sealed class SickSystem : SharedSickSystem
                 solution.AddReagent(reagentId, FixedPoint2.New((int)stream.BloodReferenceSolution.MaxVolume));
             }
 
+            if (solution.Volume == 0)
+                return;
+
             _bloodstream.ChangeBloodReagents(uid, solution);
         }
     }

@@ -2,12 +2,14 @@
 
 using Content.Shared.EntityEffects;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Timing;
 
 namespace Content.Shared._Sunrise.Disease;
 
 public sealed partial class CureDiseaseInfectionEntityEffectSystem : EntityEffectSystem<SickComponent, CureDiseaseInfection>
 {
     [Dependency] private readonly EntityManager _entityManager = default!;
+    [Dependency] private readonly IGameTiming _gameTiming = default!;
 
     protected override void Effect(Entity<SickComponent> entity, ref EntityEffectEvent<CureDiseaseInfection> args)
     {
@@ -18,6 +20,7 @@ public sealed partial class CureDiseaseInfectionEntityEffectSystem : EntityEffec
                 var comp = _entityManager.EnsureComponent<DiseaseVaccineTimerComponent>(entity.Owner);
                 comp.Immune = args.Effect.Innoculate;
                 comp.Delay = TimeSpan.FromMinutes(2) + TimeSpan.FromSeconds(disease.Shield * 30);
+                comp.ReadyAt = _gameTiming.CurTime + comp.Delay;
             }
         }
     }

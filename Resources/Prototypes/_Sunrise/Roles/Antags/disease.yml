@@ -10,7 +10,7 @@
     context: "ghost"
   - type: MovementSpeedModifier
     baseWalkSpeed: 6
-    baseSprintSpeed: 20
+    baseSprintSpeed: 10
   - type: Sprite
     noRot: true
     drawdepth: Ghosts
