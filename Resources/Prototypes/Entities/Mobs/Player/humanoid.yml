@@ -78,6 +78,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   randomizeName: false
   components:
     - type: GhostRole
@@ -139,6 +141,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   randomizeName: false
   components:
     - type: GhostRole
@@ -187,6 +191,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTLeader
   components:
     - type: GhostRole
@@ -227,6 +233,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   components:
     - type: GhostRole
       name: ghost-role-information-ert-leader-name
@@ -276,6 +284,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTLeader
   components:
     - type: BibleUser
@@ -325,6 +335,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTChaplain
   components:
     - type: GhostRole
@@ -376,6 +388,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTLeader
   components:
     - type: GhostRole
@@ -424,6 +438,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTJanitor
   components:
     - type: GhostRole
@@ -474,6 +490,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTLeader
   components:
     - type: GhostRole
@@ -522,6 +540,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTEngineer
   components:
     - type: GhostRole
@@ -572,6 +592,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTLeader
   components:
     - type: GhostRole
@@ -620,6 +642,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTSecurity
   components:
     - type: GhostRole
@@ -659,6 +683,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTSecurityEVA
   components:
     - type: GhostRole
@@ -709,6 +735,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTLeader
   components:
     - type: GhostRole
@@ -757,6 +785,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   parent: ERTMedical
   components:
     - type: GhostRole
@@ -802,6 +832,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
+  - Milira
+  - Kitsune # Fish-edit
   components:
     - type: Loadout
       prototypes: [CBURNGear]
@@ -877,6 +909,8 @@
   - Felinid
   - HumanoidXeno
   - Predator
+  - Milira
+  - Kitsune # Fish-edit
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false
@@ -902,6 +936,8 @@
   - Felinid
   - HumanoidXeno
   - Predator
+  - Milira
+  - Kitsune # Fish-edit
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false

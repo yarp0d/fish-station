@@ -16,7 +16,7 @@
   parent: JobIcon
   id: JobIconBlueShield
   icon:
-    sprite: /Textures/_fish/Interface/Misc/job_icons.rsi # Fish-edit
+    sprite: /Textures/_Fish/Interface/Misc/job_icons.rsi # Fish-edit
     state: BlueShield
 
 
@@ -24,7 +24,7 @@
   parent: JobIcon
   id: JobIconNtrGuard
   icon:
-    sprite: /Textures/_fish/Interface/Misc/job_icons.rsi # Fish-edit
+    sprite: /Textures/_Fish/Interface/Misc/job_icons.rsi # Fish-edit
     state: NanotrasenGuard
 
 
@@ -73,7 +73,7 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: JobIconPrisonGuard
+  id: JobIconPrisonTrainee
   icon:
     sprite: /Textures/_Sunrise/Interface/Misc/job_icons.rsi
     state: PrisonGuard
