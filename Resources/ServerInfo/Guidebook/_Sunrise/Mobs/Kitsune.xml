@@ -1,0 +1,10 @@
+<Document>
+  # Kitsune
+
+  <Box>
+    <GuideEntityEmbed Entity="MobHumanDummy" Caption=""/>
+  </Box>
+
+  species-description-kitsune
+
+</Document>
