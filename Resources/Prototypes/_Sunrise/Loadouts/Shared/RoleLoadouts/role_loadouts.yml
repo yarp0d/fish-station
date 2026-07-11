@@ -1,7 +1,7 @@
 - type: roleLoadout
   id: JobIAA
   groups:
-  - LawyerNeck
+  # - LawyerNeck #Fish-edit
   - LawyerJumpsuit
   - CommonBackpack
   - SunriseTrinkets
@@ -110,6 +110,22 @@
   - GroupSpeciesBreathTool
   - Socks
   - Contributors
+
+# fish-start
+- type: roleLoadout
+  id: JobBlueShieldOperative
+  groups:
+  - BlueShieldJumpsuit
+  - BlueShieldBackpack
+  - BlueShieldBelt
+  - BlueShieldNeck
+  - Trinkets
+  - SurvivalSecurity
+  - GroupSpeciesBreathTool
+  - Bra
+  - Pants
+  - Socks
+# fish-end
 
 - type: roleLoadout
   id: JobSeniorOfficer

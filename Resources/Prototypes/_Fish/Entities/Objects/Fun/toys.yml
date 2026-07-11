@@ -1,0 +1,140 @@
+- type: entity
+  parent: BasePlushie
+  id: Plushiecevulpa
+  name: plushie ce vulpa
+  components:
+  - type: Sprite
+    sprite: _Fish/Objects/Fun/toys.rsi
+    state: plushie-ce-vulpa
+  - type: UseDelay
+    delay: 4
+  - type: MeleeWeapon
+    soundHit:
+      collection: PlushieVulpkaninGrowls
+      params:
+        volume: 100
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: PlushieVulpkaninGrowls
+  - type: EmitSoundOnUse
+    sound:
+      collection: PlushieVulpkaninGrowls
+  - type: EmitSoundOnLand
+    sound:
+      collection: VulpkaninScreams
+  - type: EmitSoundOnActivate
+    sound:
+      collection: PlushieVulpkaninGrowls
+
+- type: entity
+  parent: BasePlushie
+  id: Plushieengiexeno
+  name: plushie engie xeno
+  components:
+  - type: Sprite
+    sprite: _Fish/Objects/Fun/toys.rsi
+    state: plushie-engie-xeno
+  - type: UseDelay
+    delay: 4
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Sunrise/Voice/HumanoidXeno/humanoid_xeno_scream1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Sunrise/Voice/HumanoidXeno/humanoid_xeno_scream4.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Sunrise/Voice/HumanoidXeno/humanoid_xeno_scream1.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_Sunrise/Voice/HumanoidXeno/humanoid_xeno_scream3.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Sunrise/Voice/HumanoidXeno/humanoid_xeno_scream3.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/_Sunrise/Voice/HumanoidXeno/humanoid_xeno_scream2.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieAnnaSolovieva
+  name: Plushie Anna Solovieva
+  components:
+  - type: Sprite
+    sprite: _Fish/Objects/Fun/toys.rsi
+    state: annasolovieva
+  - type: UseDelay
+    delay: 4
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Animals/cat_meow.ogg
+
+- type: entity
+  id: PlushieOlegmol
+  parent: BaseFigurine
+  name: Olegmol
+  description: He's just an optimistic green moth.
+  components:
+  - type: Sprite
+    sprite: _Fish/Objects/Fun/toys.rsi
+    state: Olegmol
+  - type: SpeakOnTrigger
+    pack: Figurinesmol
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/Voice/Moth/moth_scream.ogg
+  - type: UseDelay
+    delay: 5
+  - type: TTS
+    voice: meepo_dota_2
+  - type: Speech
+    speechSounds: Pai
+
+- type: entity
+  parent: BasePlushie
+  id: Plushiemikhail
+  name: plushie mikhail beerbeard oboronovich
+  components:
+  - type: Sprite
+    sprite: _Fish/Objects/Fun/toys.rsi
+    state: plushie-mikhail-beerbeard-oboronovich
+  - type: UseDelay
+    delay: 4
+  - type: TTS
+    voice: HearthstoneTekahn
+  - type: TriggerOnUse
+  - type: SpeakOnTrigger
+    text: plushie-mikhail-beerbeard-oboronovich-on-use
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Fish/Items/MikhailThrow.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: Plushiesquishymoth
+  name: plushie squishy moth
+  components:
+  - type: Sprite
+    sprite: _Fish/Objects/Fun/toys.rsi
+    state: plushie-squishy-moth
+  - type: MeleeWeapon
+    soundHit:
+      collection: PlushieSlimeSounds
+      params:
+        volume: 100
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: PlushieSlimeSounds
+  - type: EmitSoundOnCollide
+    sound:
+      collection: PlushieSlimeSounds
+  - type: EmitSoundOnUse
+    sound:
+      collection: PlushieSlimeSounds
+  - type: EmitSoundOnLand
+    sound:
+      collection: PlushieSlimeSounds
+  - type: EmitSoundOnActivate
+    sound:
+      collection: PlushieSlimeSounds

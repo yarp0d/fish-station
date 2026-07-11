@@ -206,7 +206,7 @@ namespace Content.Client.HealthAnalyzer.UI
 
         private Texture GetTexture(string texture)
         {
-            var rsiPath = new ResPath("/Textures/Objects/Devices/health_analyzer.rsi");
+            var rsiPath = new ResPath("/Textures/_Sunrise/Objects/Devices/health_analyzer.rsi");
             var rsiSprite = new SpriteSpecifier.Rsi(rsiPath, texture);
 
             var rsi = _cache.GetResource<RSIResource>(rsiSprite.RsiPath).RSI;
@@ -235,10 +235,12 @@ namespace Content.Client.HealthAnalyzer.UI
                 Orientation = BoxContainer.LayoutOrientation.Horizontal,
             };
 
+            string spriteName = id.ToLower();
+
             rootContainer.AddChild(new TextureRect
             {
                 SetSize = new Vector2(30, 30),
-                Texture = GetTexture(id.ToLower())
+                Texture = GetTexture(spriteName)// Fish-edit
             });
 
             rootContainer.AddChild(CreateDiagnosticItemLabel(text));

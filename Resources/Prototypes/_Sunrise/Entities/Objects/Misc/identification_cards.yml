@@ -33,6 +33,11 @@
       state: BlueShield
   - type: Item
     heldPrefix: gold
+#Fish-start
+  - type: Access
+    groups:
+    - AllAccess
+#Fish-end
   - type: PresetIdCard
     job: BlueShieldEnsign
 
@@ -52,6 +57,11 @@
       state: BlueShield
   - type: Item
     heldPrefix: blue
+#Fish-start
+  - type: Access
+    groups:
+    - AllAccess
+#Fish-end
   - type: PresetIdCard
     job: BlueShieldOperative
 

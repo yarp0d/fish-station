@@ -34,7 +34,8 @@
   - HumanoidXeno
   - Predator
   - Resomi
-  parent: EventHumanoidERTSunrise
+  - Kitsune
+  parent: EventHumanoidCentcommSunrise
   randomizeName: false
   components:
     - type: GhostRole
@@ -503,7 +504,7 @@
 
 - type: randomHumanoidSettings
   id: CBURNAgentEVA
-  parent: EventHumanoidERTSunrise
+  parent: EventHumanoidCentcomm
   speciesBlacklist:
   - Diona
   - Vox
@@ -520,7 +521,7 @@
   - HumanoidXeno
   - Predator
   - Resomi
-  - Resomi
+  - Kitsune
   components:
     - type: Loadout
       prototypes: [CBURNGearEVA]

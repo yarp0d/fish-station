@@ -1,86 +1,11 @@
-# All the Vulpkanin customization
-
-- type: marking
-  id: BaseSunriseMarkingVulpChest
-  abstract: true
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpFacialHair
-  abstract: true
-  bodyPart: FacialHair
-  markingCategory: FacialHair
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpHair
-  abstract: true
-  bodyPart: Hair
-  markingCategory: Hair
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpHead
-  abstract: true
-  bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpHeadTop
-  abstract: true
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpLeftArm
-  abstract: true
-  bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpLeftLeg
-  abstract: true
-  bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpRightFootOverlay
-  abstract: true
-  bodyPart: RFoot
-  markingCategory: Overlay
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpRightHandOverlay
-  abstract: true
-  bodyPart: RHand
-  markingCategory: Overlay
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpSnout
-  abstract: true
-  bodyPart: Snout
-  markingCategory: Snout
-  speciesRestriction: [Vulpkanin]
-
-- type: marking
-  id: BaseSunriseMarkingVulpTail
-  abstract: true
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vulpkanin]
+﻿# All the Vulpkanin customization
 
 # Ears Markings
 - type: marking
   id: VulpEar
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: vulp
@@ -89,7 +14,9 @@
 
 - type: marking
   id: VulpEarFade
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: vulp
@@ -98,7 +25,9 @@
 
 - type: marking
   id: VulpEarSharp
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: vulp
@@ -107,7 +36,9 @@
 
 - type: marking
   id: VulpEarJackal
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: jackal
@@ -116,7 +47,9 @@
 
 - type: marking
   id: VulpEarJackalAlt
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: jackal_alt
@@ -125,7 +58,9 @@
 
 - type: marking
   id: VulpEarTerrier
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: terrier
@@ -134,7 +69,9 @@
 
 - type: marking
   id: VulpEarWolf
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: wolf
@@ -143,7 +80,9 @@
 
 - type: marking
   id: VulpEarFennec
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: fennec
@@ -152,14 +91,18 @@
 
 - type: marking
   id: VulpEarFox
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: fox
 
 - type: marking
   id: VulpEarOtie
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: otie
@@ -168,7 +111,9 @@
 
 - type: marking
   id: VulpEarTajaran
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin, Kitsune]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: msai
@@ -177,21 +122,27 @@
 
 - type: marking
   id: VulpEarShock
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: shock
 
 - type: marking
   id: VulpEarCoyote
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: coyote
 
 - type: marking
   id: VulpEarDalmatian
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: dalmatian
@@ -199,63 +150,81 @@
 # Head Markings (Snout)
 - type: marking
   id: VulpSnoutAlt
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: muzzle_alt
 
 - type: marking
   id: VulpSnout
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: muzzle
 
 - type: marking
   id: VulpSnoutSharp
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: muzzle_sharp
 
 - type: marking
   id: VulpSnoutFade
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: muzzle_fade
 
 - type: marking
   id: VulpSnoutMask
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: mask
 
 - type: marking
   id: VulpSnoutVulpine
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: vulpine
 
 - type: marking
   id: VulpSnoutSwift
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: vulpine-lines
 
 - type: marking
   id: VulpSnoutBlaze
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: blaze
 
 - type: marking
   id: VulpSnoutPatch
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: patch
@@ -263,21 +232,27 @@
 # Head Markings (Head)
 - type: marking
   id: VulpHeadTiger
-  parent: BaseSunriseMarkingVulpHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: tiger_head
 
 - type: marking
   id: VulpHeadTigerFace
-  parent: BaseSunriseMarkingVulpHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: tiger_face
 
 - type: marking
   id: VulpHeadSlash
-  parent: BaseSunriseMarkingVulpHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: slash
@@ -285,7 +260,9 @@
 # Tail Markings
 - type: marking
   id: VulpTail
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: vulp
@@ -294,7 +271,9 @@
 
 - type: marking
   id: VulpTailTip
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: vulp
@@ -303,7 +282,9 @@
 
 - type: marking
   id: VulpTailWag
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: vulp_wag
@@ -312,7 +293,9 @@
 
 - type: marking
   id: VulpTailWagTip
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: vulp_wag
@@ -321,7 +304,9 @@
 
 - type: marking
   id: VulpTailAlt
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: vulp_alt
@@ -330,7 +315,9 @@
 
 - type: marking
   id: VulpTailAltTip
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: vulp_alt
@@ -339,7 +326,9 @@
 
 - type: marking
   id: VulpTailLong
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: long
@@ -348,7 +337,9 @@
 
 - type: marking
   id: VulpTailFox
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: fox
@@ -357,7 +348,9 @@
 
 - type: marking
   id: VulpTailFoxTip
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: fox
@@ -366,7 +359,9 @@
 
 - type: marking
   id: VulpTailFoxWag
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: fox_wag
@@ -375,7 +370,9 @@
 
 - type: marking
   id: VulpTailFoxWagTip
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: fox_wag
@@ -384,42 +381,54 @@
 
 - type: marking
   id: VulpTailBushy
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: bushfluff
 
 - type: marking
   id: VulpTailBushyWag
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: bushfluff_wag
 
 - type: marking
   id: VulpTailCoyote
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: coyote
 
 - type: marking
   id: VulpTailCoyoteWag
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: coyote_wag
 
 - type: marking
   id: VulpTailCorgiWag
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: corgi_wag
 
 - type: marking
   id: VulpTailHusky
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: husky-inner
@@ -428,21 +437,27 @@
 
 - type: marking
   id: VulpTailHuskyAlt
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: husky
 
 - type: marking
   id: VulpTailFox2
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: fox2
 
 - type: marking
   id: VulpTailFox3
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: fox3
@@ -451,28 +466,36 @@
 
 - type: marking
   id: VulpTailFennec
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: fennec
 
 - type: marking
   id: VulpTailOtie
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: otie
 
 - type: marking
   id: VulpTailFluffy
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: fluffy
 
 - type: marking
   id: VulpTailFluffyAlt
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: fluffy_alt-outer
@@ -481,7 +504,9 @@
 
 - type: marking
   id: VulpTailDalmatianWag
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/tail_markings.rsi
     state: dalmatian_wag
@@ -489,21 +514,27 @@
 # Body Markings (Chest)
 - type: marking
   id: VulpBellyCrest
-  parent: BaseSunriseMarkingVulpChest
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: belly_crest
 
 - type: marking
   id: VulpBellyFull
-  parent: BaseSunriseMarkingVulpChest
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: belly_full
 
 - type: marking
   id: VulpBellyFox
-  parent: BaseSunriseMarkingVulpChest
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: belly_fox
@@ -540,28 +571,36 @@
 # Leg Markings
 - type: marking
   id: VulpPointsFeet
-  parent: BaseSunriseMarkingVulpRightFootOverlay
+  markingCategory: Overlay
+  bodyPart: RFoot
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: points_feet
 
 - type: marking
   id: VulpPointsCrestLegs
-  parent: BaseSunriseMarkingVulpLeftLeg
+  markingCategory: Legs
+  bodyPart: LLeg
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: points_crest-legs
 
 - type: marking
   id: VulpPointsFadeLegs
-  parent: BaseSunriseMarkingVulpLeftLeg
+  markingCategory: Legs
+  bodyPart: LLeg
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: points_fade-legs
 
 - type: marking
   id: VulpPointsSharpLegs
-  parent: BaseSunriseMarkingVulpLeftLeg
+  markingCategory: Legs
+  bodyPart: LLeg
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: points_sharp-legs
@@ -569,28 +608,36 @@
 # Arm Markings
 - type: marking
   id: VulpPointsHands
-  parent: BaseSunriseMarkingVulpRightHandOverlay
+  markingCategory: Overlay
+  bodyPart: RHand
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: points_hands
 
 - type: marking
   id: VulpPointsCrestArms
-  parent: BaseSunriseMarkingVulpLeftArm
+  markingCategory: Arms
+  bodyPart: LArm
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: points_crest-arms
 
 - type: marking
   id: VulpPointsFadeArms
-  parent: BaseSunriseMarkingVulpLeftArm
+  markingCategory: Arms
+  bodyPart: LArm
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: points_fade-arms
 
 - type: marking
   id: VulpPointsSharpArms
-  parent: BaseSunriseMarkingVulpLeftArm
+  markingCategory: Arms
+  bodyPart: LArm
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/body_markings.rsi
     state: points_sharp-arms
@@ -598,147 +645,189 @@
 # Hairs
 - type: marking
   id: VulpHairAdhara
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  speciesRestriction: [Vulpkanin]
+  markingCategory: Hair
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: adhara
 
 - type: marking
   id: VulpHairAnita
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  speciesRestriction: [Vulpkanin]
+  markingCategory: Hair
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: anita
 
 - type: marking
   id: VulpHairApollo
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  speciesRestriction: [Vulpkanin]
+  markingCategory: Hair
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: apollo
 
 - type: marking
   id: VulpHairBelle
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  speciesRestriction: [Vulpkanin]
+  markingCategory: Hair
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: belle
 
 - type: marking
   id: VulpHairBraided
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: braided
 
 - type: marking
   id: VulpHairBun
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: bun
 
 - type: marking
   id: VulpHairCleanCut
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: clean_cut
 
 - type: marking
   id: VulpHairCurl
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: curl
 
 - type: marking
   id: VulpHairHawk
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: hawk
 
 - type: marking
   id: VulpHairJagged
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: jagged
 
 - type: marking
   id: VulpHairJeremy
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: jeremy
 
 - type: marking
   id: VulpHairKajam
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: kajam
 
 - type: marking
   id: VulpHairKeid
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: keid
 
 - type: marking
   id: VulpHairKleeia
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: kleeia
 
 - type: marking
   id: VulpHairMizar
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: mizar
 
 - type: marking
   id: VulpHairPunkBraided
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: punkbraided
 
 - type: marking
   id: VulpHairRaine
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: raine
 
 - type: marking
   id: VulpHairRough
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: rough
 
 - type: marking
   id: VulpHairShort
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: short
 
 - type: marking
   id: VulpHairShort2
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: short2
 
 - type: marking
   id: VulpHairSpike
-  parent: BaseSunriseMarkingVulpHair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/hair.rsi
     state: spike
@@ -746,35 +835,45 @@
 # Facial Hairs
 - type: marking
   id: VulpFacialHairRuff
-  parent: BaseSunriseMarkingVulpFacialHair
+  bodyPart: FacialHair
+  markingCategory: FacialHair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/facial_hair.rsi
     state: ruff
 
 - type: marking
   id: VulpFacialHairElder
-  parent: BaseSunriseMarkingVulpFacialHair
+  bodyPart: FacialHair
+  markingCategory: FacialHair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/facial_hair.rsi
     state: elder
 
 - type: marking
   id: VulpFacialHairElderChin
-  parent: BaseSunriseMarkingVulpFacialHair
+  bodyPart: FacialHair
+  markingCategory: FacialHair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/facial_hair.rsi
     state: elder_chin
 
 - type: marking
   id: VulpFacialHairKita
-  parent: BaseSunriseMarkingVulpFacialHair
+  bodyPart: FacialHair
+  markingCategory: FacialHair
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/facial_hair.rsi
     state: kita
 
 - type: marking
   id: MoonTail
-  parent: BaseSunriseMarkingVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
   sponsorOnly: false
   coloring:
     default:
@@ -793,35 +892,45 @@
 
 - type: marking
   id: VulpMoonLegs
-  parent: BaseSunriseMarkingVulpLeftLeg
+  markingCategory: Legs
+  bodyPart: LLeg
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/moon_markings.rsi
     state: points_moon-legs
 
 - type: marking
   id: VulpMoonArms
-  parent: BaseSunriseMarkingVulpLeftArm
+  markingCategory: Arms
+  bodyPart: LArm
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/moon_markings.rsi
     state: points_moon-arms
 
 - type: marking
   id: VulpMoonHead
-  parent: BaseSunriseMarkingVulpHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/moon_markings.rsi
     state: points_moon-head
 
 - type: marking
   id: VulpMoonBelly
-  parent: BaseSunriseMarkingVulpChest
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/moon_markings.rsi
     state: points_moon-chest
 
 - type: marking
   id: VulpMoonEars
-  parent: BaseSunriseMarkingVulpHeadTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/ear_markings.rsi
     state: main_moon
@@ -830,21 +939,27 @@
 
 - type: marking
   id: VulpMoonHands
-  parent: BaseSunriseMarkingVulpRightHandOverlay
+  markingCategory: Overlay
+  bodyPart: RHand
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/moon_markings.rsi
     state: points_moon-hands
 
 - type: marking
   id: VulpMoonPaws
-  parent: BaseSunriseMarkingVulpRightFootOverlay
+  markingCategory: Overlay
+  bodyPart: RFoot
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/moon_markings.rsi
     state: points_moon-paws
 
 - type: marking
   id: VulpSnoutSpots
-  parent: BaseSunriseMarkingVulpSnout
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
   sprites:
   - sprite: _Sunrise/Mobs/Customization/Vulpkanin/head_markings.rsi
     state: face_spots
