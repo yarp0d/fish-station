@@ -35,7 +35,7 @@
   abstract: true
   components:
   - type: StationTransitHub
-    map: /Maps/_Fish/Nonstations/transit_hub.yml # Fish-edit
+    map: /Maps/_Fish/Nonstations/transit_hub_FH.yml # Fish-edit
     biomes:
     - PlainGrasslands
     - PlainLowDesert
@@ -105,3 +105,27 @@
   abstract: true
   components:
   - type: StationRandomXenoArtifact
+
+- type: entity
+  id: BaseStationSpam
+  abstract: true
+  components:
+  - type: StationMessengerSpam
+
+- type: entity
+  id: BaseStationCriminalRecords
+  abstract: true
+  components:
+  - type: StationCriminalRecords
+
+- type: entity
+  id: BaseStationCorporateLaw
+  abstract: true
+  components:
+  - type: StationCorporateLaw
+
+- type: entity
+  id: BaseStationMainStation
+  abstract: true
+  components:
+  - type: MainStation

@@ -41,9 +41,10 @@
   id: JobBrigmedic
   groups:
   - BrigmedicJumpsuit
+  - BrigmedicOuterClothing
   - BrigmedicBackpack
   - BrigmedicInjectors
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - SunriseTrinkets
   - SecurityTrinkets
   - GroupSpeciesBreathTool
@@ -53,44 +54,54 @@
   - Socks
   - Contributors
 
-- type: roleLoadout
-  id: JobCentCommOfficial
-  groups:
-  - CentCommOperatorHats
-  - CentCommOperatorJumpsuit
-  - SunriseTrinkets
-  - SunriseSurvival
-  - GroupSpeciesBreathTool
-  - Bra
-  - Pants
-  - Socks
-  - Contributors
+# FIsh edit start
+# - type: roleLoadout
+#   id: JobCentCommOfficial
+#   groups:
+#   - CentCommOperatorHats
+#   - CentCommOperatorJumpsuit
+#   - SunriseTrinkets
+#   - SunriseSurvival
+#   - GroupSpeciesBreathTool
+#   - Bra
+#   - Pants
+#   - Socks
+#   - Contributors
+# FIsh edit end
 
-- type: roleLoadout
-  id: JobCentCommOperator
-  groups:
-  - CentCommOperatorHats
-  - CentCommOperatorJumpsuit
-  - SunriseTrinkets
-  - SunriseSurvival
-  - GroupSpeciesBreathTool
-  - Bra
-  - Pants
-  - Socks
-  - Contributors
+# FIsh edit start
+# - type: roleLoadout
+#   id: JobCentCommOperator
+#   groups:
+#   - CentCommOperatorHats
+#   - CentCommOperatorJumpsuit
+#   - SunriseTrinkets
+#   - SunriseSurvival
+#   - GroupSpeciesBreathTool
+#   - Bra
+#   - Pants
+#   - BlueShieldBra # fish-edit
+#   - BlueShieldPants # fish-edit
+#   - Socks
+#   - Contributors
+# FIsh edit end
 
 - type: roleLoadout
   id: JobBlueShieldEnsign
   groups:
+  - BlueShieldHead
   - BlueShieldNeck
+  - BlueShieldOuterClothing # Fish-add
   - BlueShieldJumpsuit
   - BlueShieldBackpack
   - BlueShieldBelt
   - BlueshieldGun
-  - BlueShieldBra
-  - BlueShieldPants
+  - Bra # Fish-Edit
+  - Pants # Fish-Edit
+# - BlueShieldBra # Fish-Edit
+# - BlueShieldPants # Fish-Edit
   - SunriseTrinkets
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - GroupSpeciesBreathTool
   - Socks
   - Contributors
@@ -98,15 +109,19 @@
 - type: roleLoadout
   id: JobBlueShieldOfficer
   groups:
+  - BlueShieldHead
   - BlueShieldNeck
+  - BlueShieldOuterClothing # Fish-add
   - BlueShieldJumpsuit
   - BlueShieldBackpack
   - BlueShieldBelt
   - BlueshieldGun
-  - BlueShieldBra
-  - BlueShieldPants
+  - Bra # Fish-Edit
+  - Pants # Fish-Edit
+# - BlueShieldBra # Fish-Edit
+# - BlueShieldPants # Fish-Edit
   - SunriseTrinkets
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - GroupSpeciesBreathTool
   - Socks
   - Contributors
@@ -119,11 +134,16 @@
   - BlueShieldBackpack
   - BlueShieldBelt
   - BlueShieldNeck
+  - BlueShieldOuterClothing # Fish-add
   - Trinkets
+  - BlueshieldGun
+  - SunriseTrinkets
   - SurvivalSecurity
   - GroupSpeciesBreathTool
   - Bra
   - Pants
+# - BlueShieldBra # Fish-Edit
+# - BlueShieldPants # Fish-Edit
   - Socks
 # fish-end
 
@@ -136,7 +156,7 @@
   - SecurityBelt
   - SecurityShoes
   - SunriseSecurityGun
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - SunriseTrinkets
   - SecurityTrinkets
   - GroupSpeciesBreathTool
@@ -250,7 +270,7 @@
   - SecurityShoes
   - SecurityBackpack
   - SunriseSecurityGun
-  - SurvivalSecurity
+  - SunriseSurvivalSecurity
   - SunriseTrinkets
   - SecurityTrinkets
   - GroupSpeciesBreathTool
@@ -266,7 +286,7 @@
 #  - PrisonGuardJumpsuit
 #  - PrisonGuardBackpack
 #  - SecurityShoes
-#  - SurvivalSecurity
+#  - SunriseSurvivalSecurity
 #  - Trinkets
 #  - SecurityTrinkets
 #  - GroupSpeciesBreathTool
@@ -281,7 +301,7 @@
   - HeadOfPrisonJumpsuit
   #- PrisonGuardBackpack
   #- SecurityShoes
-  #- SurvivalSecurity
+  #- SunriseSurvivalSecurity
   #- Trinkets
   #- SecurityTrinkets
   #- GroupSpeciesBreathToolSecurity
@@ -408,7 +428,7 @@
 #  - PrisonGuardJumpsuit
 #  - PrisonGuardBackpack
 #  - SecurityShoes
-#  - SurvivalSecurity
+#  - SunriseSurvivalSecurity
 #  - Trinkets
 #  - SecurityTrinkets
 #  - GroupSpeciesBreathTool
@@ -450,8 +470,10 @@
   - AdjutantJumpsuit
   - AdjutantOuterClothing
   - AdjutantBackpack
-  - AdjutantBra
-  - AdjutantPants
+  - Bra # Fish-Edit
+  - Pants # Fish-Edit
+# - AdjutantBra # Fish-Edit
+# - AdjutantPants # Fish-Edit
   - SunriseSurvival
   - SunriseTrinkets
   - GroupSpeciesBreathTool
@@ -482,6 +504,20 @@
   - GroupSpeciesBreathTool
   - GroupPocketTankDouble
   - Contributors
+
+- type: roleLoadout
+  id: SunriseRoleSurvivalSyndicate
+  groups:
+  - SunriseSurvivalSyndicate
+  - GroupSpeciesBreathTool
+  - GroupTankHarness
+
+- type: roleLoadout
+  id: SunriseRoleSurvivalNukie
+  groups:
+  - SunriseSurvivalSyndicate
+  - GroupSpeciesBreathTool
+  - GroupPocketTankDouble
 
 - type: roleLoadout
   id: JobMiningSpecialist

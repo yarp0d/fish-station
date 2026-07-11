@@ -31,14 +31,8 @@
 - type: startingGear
   id: SpecOpsOfficerGear
   equipment:
-    shoes: ClothingShoesCentcomBlack
-    head: ClothingHeadCapCentcomBlack  #Fish-Edit
-    eyes: ClothingEyesGlassesSunglasses
-    gloves: ClothingHandsGlovesCombat
-#    outerClothing: ClothingOuterArmorBasicSlim
     id: SpecOpsOfficerPDA
-    ears: ClothingHeadsetFishCentCom
-    belt: WeaponPistolN1984
+    ears: ClothingHeadsetAltSpecOpsOfficer
   storage:
     back:
     - PenCentcom
@@ -62,7 +56,7 @@
   components:
   - type: Sprite
     layers:
-    - state: centcom
+    - state: green
   - type: Item
     heldPrefix: blue
   - type: PresetIdCard

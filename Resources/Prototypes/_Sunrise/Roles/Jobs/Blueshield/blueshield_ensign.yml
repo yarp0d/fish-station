@@ -17,10 +17,7 @@
   supervisors: job-supervisors-centcom
   canBeAntag: false
   accessGroups:
-  - AllAccess
-  access:
-  - CentralCommand
-    # Fish-End
+  - AllAccess # Fish-edit
   special:
     - !type:AddImplantSpecial
       implants: [ MindShieldImplant ]
@@ -31,8 +28,8 @@
     shoes: ClothingShoesBootsBlueShieldFilled
     eyes: ClothingEyesGlassesBlueShield
     head: ClothingHeadHatBeretBlueShield
-    outerClothing: ClothingOuterArmorBlueShield
     id: BlueShieldEnsignPDA
+    # outerClothing: ClothingOuterArmorBlueShield # Fish edit - commented out, managed via loadout
     ears: ClothingHeadsetBlueShieldEnsign
     belt: ClothingBeltBlueShieldWebbingFilled
     gloves: ClothingHandsGlovesCombat
@@ -40,6 +37,7 @@
   storage:
     back:
     - HandheldBSOCrewMonitor
+    - RubberStampCommanderBlueShield
 
 - type: chameleonOutfit
   id: BlueShieldEnsignChameleonOutfit
@@ -49,6 +47,6 @@
     shoes: ClothingShoesBootsBlueShieldFilled
     eyes: ClothingEyesGlassesBlueShield
     head: ClothingHeadHatBeretBlueShield
-    outerClothing: ClothingOuterArmorBlueShield
+    # outerClothing: ClothingOuterArmorBlueShield # Fish edit - commented out, managed via loadout
     belt: ClothingBeltBlueShieldWebbingFilled
     gloves: ClothingHandsGlovesCombat

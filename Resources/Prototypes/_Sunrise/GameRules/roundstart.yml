@@ -4,6 +4,25 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: DiseaseRule
+  - type: StationEvent
+    weight: 5
+    earliestStart: 30
+    minimumPlayers: 40
+    reoccurrenceDelay: 20
+    maxOccurrences: 1
+    duration: null
+  - type: AntagRandomSpawn
+  - type: AntagSpawner
+    prototype: MobDisease
+  - type: DynamicRuleCost
+    cost: 100
+  - type: AntagSelection
+    agentName: disease-agent-name
+    definitions:
+    - spawnerPrototype: SpawnPointGhostDisease
+      min: 1
+      max: 1
+      pickPlayer: false
 
 - type: entity
   id: Fugitive
@@ -28,3 +47,22 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PlanetPrisonRule
+
+- type: entity
+  id: GreenShitStationEventScheduler
+  parent: BaseGameRule
+  components:
+  - type: BasicStationEventScheduler
+    scheduledGameRules: !type:NestedSelector
+      tableId: BasicCalmGameRulesTable
+
+- type: entityTable
+  id: BasicCalmGameRulesTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+      - !type:NestedSelector
+        tableId: BasicCalmEventsTableGreenShit #BasicCalmEventsTable Когда нибудь вернуть
+      - !type:NestedSelector
+        tableId: CargoGiftsTable
+      - !type:NestedSelector
+        tableId: CalmPestEventsTable

@@ -226,9 +226,24 @@
     - Snout
 
 - type: entity
-  parent: ClothingMaskClownBase
+  parent: [ClothingMaskClownBase, BaseFoldable]
   id: ClothingMaskClown
+  description: A clown mask featuring a foldable wig; a true prankster's attire.
   components:
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: FoldableClothing
+    foldedEquippedPrefix: opened
+    foldedHeldPrefix: opened
+  - type: Sprite
+    sprite: Clothing/Mask/clown.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-opened
+      map: [ "foldedLayer" ]
+      visible: false
   - type: Tag
     tags:
     - ClownMask
@@ -239,7 +254,7 @@
     - Snout
 
 - type: entity
-  parent: ClothingMaskClown
+  parent: ClothingMaskClownBase
   id: ClothingMaskClownBanana
   name: banana clown wig and mask
   components:
@@ -250,9 +265,17 @@
   - type: Construction
     graph: BananaClownMask
     node: mask
+  - type: Tag
+    tags:
+    - ClownMask
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
-  parent: [ClothingMaskClown, BaseSecurityContraband]
+  parent: [ClothingMaskClownBase, BaseSecurityContraband]
   id: ClothingMaskClownSecurity
   name: security clown wig and mask
   description: A debatably oxymoronic but protective mask and wig.
@@ -268,6 +291,14 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: Tag
+    tags:
+    - ClownMask
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
 
 - type: entity
   parent: ClothingMaskBase
@@ -472,7 +503,7 @@
   parent: ClothingMaskGasERT
   id: ClothingMaskGasDeathSquad
   name: death squad gas mask
-  description: A unique gas mask for the NT's most elite squad. Features integrated oxygen supply, advanced vision systems, and welding protection.
+  description: A unique gas mask for the NT's most elite squad.
   components:
   - type: Sprite
     sprite: Clothing/Mask/squadron.rsi
@@ -480,38 +511,11 @@
     sprite: Clothing/Mask/squadron.rsi
   - type: Pierceable
     level: Rock
-  - type: FlashImmunity #Fish-edit
-  - type: EyeProtection #Fish-edit
-  - type: ItemToggle
-    predictable: false
-    onUse: false
-    canActivateInhand: false
-    soundActivate:
-      path: /Audio/_Sunrise/Items/Goggles/activate.ogg
-    soundDeactivate:
-      path: /Audio/_Sunrise/Items/Goggles/deactivate.ogg
-    soundFailToActivate:
-      path: /Audio/Machines/button.ogg
-  - type: ComponentToggler #Fish-edit
-    parent: true
-    components:
-    - type: ThermalVision
-  - type: ToggleClothing
-    action: ActionToggleThermalVision
-    disableOnUnequip: true
-    targetSlot: mask
   - type: HideLayerClothing
     slots:
     - Hair
     - HeadTop
     - HeadSide
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.80
-        Slash: 0.80
-        Piercing: 0.90
-        Heat: 0.90
 
 - type: entity
   parent: ClothingMaskBase
