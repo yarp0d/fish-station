@@ -5444,21 +5444,7 @@ entities:
           showEnts: False
           occludes: True
           ents: []
-    - type: TelecomThermal
-      loadDivisor: 0
-      heatPerMessage: 0
-      maxTemperature: 390111
-      minTemperature: 0
-      maxPressure: 550000
-      staticChancePeriodFactor: 0
-      ambientVolumeMultiplier: 1
-      baseAmbientRange: 1
-      ambientRangeMultiplier: 1
-      loadIncreasePerMessage: 0
-      staticFactorThreshold: 0
-      staticChanceMultiplier: 0
-      staticChanceWordFactor: 0
-      maxBandwidth: 500
+
     missingComponents:
     - Temperature
 - proto: ThrusterLarge

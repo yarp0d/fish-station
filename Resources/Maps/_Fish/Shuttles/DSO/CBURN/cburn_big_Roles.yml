@@ -9893,20 +9893,7 @@ entities:
     - type: Transform
       pos: -3.5,7.5
       parent: 1
-    - type: TelecomThermal
-      heatPerMessage: 0
-      maxTemperature: 40000
-      minTemperature: 0
-      maxPressure: 55000
-      staticChancePeriodFactor: 0
-      ambientVolumeMultiplier: 1
-      baseAmbientRange: 1
-      ambientRangeMultiplier: 1
-      loadIncreasePerMessage: 0
-      staticFactorThreshold: 0
-      staticChanceMultiplier: 0
-      staticChanceWordFactor: 0
-      maxBandwidth: 500
+
     - type: ContainerContainer
       containers:
         key_slots: !type:Container

@@ -8876,7 +8876,6 @@ entities:
           volume: 0
         path: ""
     missingComponents:
-    - TelecomThermal
     - Temperature
 - proto: Thruster
   entities:
