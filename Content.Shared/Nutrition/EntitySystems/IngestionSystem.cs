@@ -1,4 +1,4 @@
-﻿using Content.Shared.Administration.Logs;
+using Content.Shared.Administration.Logs;
 using Content.Shared.Body;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
@@ -277,33 +277,6 @@ public sealed partial class IngestionSystem : EntitySystem
         // Check if despite being able to digest the item something is blocking us from eating.
         if (!CanConsume(args.User, entity, args.Ingested, out var solution, out var time))
             return;
-
-        // Fish-Start: Check stomach capacity before starting do-after to prevent unlimited eating bug
-        var hasAvailableStomach = false;
-        foreach (var ent in stomachs)
-        {
-            var owner = ent.Owner;
-            if (!_solutionContainer.ResolveSolution(owner, StomachSystem.DefaultSolutionName, ref ent.Comp1.Solution, out var stomachSol))
-                continue;
-
-            if (stomachSol.AvailableVolume <= FixedPoint2.Zero)
-                continue;
-
-            if (!IsDigestibleBy(food, ent))
-                continue;
-
-            hasAvailableStomach = true;
-            break;
-        }
-
-        if (!hasAvailableStomach)
-        {
-            _popup.PopupClient(Loc.GetString("ingestion-you-cannot-ingest-any-more", ("verb", GetEdibleVerb(food))), entity, entity);
-            if (forceFed)
-                _popup.PopupClient(Loc.GetString("ingestion-other-cannot-ingest-any-more", ("target", entity), ("verb", GetEdibleVerb(food))), food, args.User);
-            return;
-        }
-        // Fish-End
 
         if (!_doAfter.TryStartDoAfter(GetEdibleDoAfterArgs(args.User, entity, food, time ?? TimeSpan.Zero)))
             return;

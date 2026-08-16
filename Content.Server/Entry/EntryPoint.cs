@@ -115,7 +115,8 @@ namespace Content.Server.Entry
                 cast.ServerBeforeIoC?.Invoke();
             }
 
-            Dependencies.Resolve<IRobustSerializer>().FloatFlags = SerializerFloatFlags.RemoveReadNan;
+            // Fish-edit: FloatFlags removed in upstream RobustToolbox
+            // Dependencies.Resolve<IRobustSerializer>().FloatFlags = SerializerFloatFlags.RemoveReadNan;
         }
 
         /// <inheritdoc />
