@@ -113,12 +113,6 @@ public partial interface IBanManager // Sunrise-Edit
     /// </summary>
     /// <param name="pSession">Player's session</param>
     public void SendRoleBans(ICommonSession pSession);
-    // Sunrise-Start
-    public Task PardonBan(ICommonSession? admin, int banId, ServerBanDef ban);
-    event EventHandler<ServerBanIssuedEvent>? ServerBanIssued;
-    event EventHandler<ServerBanPardonedEvent>? ServerBanPardoned;
-    event EventHandler<PlayerKickingForBanEvent>? PlayerKickingForBan;
-    // Sunrise-End
     // Fish-start - отложенные баны
     public void CreateDeferredBan(CreateBanInfo banInfo, bool erase);
     public void ApplyDeferredBans();
@@ -407,5 +401,4 @@ public sealed class CreateRoleBanInfo : CreateBanInfo
         JobPrototypes.Add(protoId);
         return this;
     }
->>>>>>> 956d5e375a33e55ab58ffd3556b1e30736ef8738
 }

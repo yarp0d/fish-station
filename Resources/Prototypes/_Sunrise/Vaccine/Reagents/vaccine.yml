@@ -16,7 +16,7 @@
   flavor: medicine
   color: "#86caf7"
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
         - !type:CureDiseaseInfection
           conditions:
@@ -33,7 +33,7 @@
   flavor: medicine
   color: "#8192ea"
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
         - !type:CureDiseaseInfection
           innoculate: true
@@ -51,7 +51,7 @@
   flavor: medicine
   color: "#ffc107"
   metabolisms:
-    Medicine:
+    Bloodstream:
       effects:
         - !type:GiveDiseaseImmunity
           conditions:

@@ -7,12 +7,12 @@
   flavor: bitter
   color: "#722222"
   metabolisms:
-    Drink:
+    Digestion:
       # Disgusting!
       effects:
       - !type:SatiateThirst
         factor: -0.5
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -30,12 +30,12 @@
   flavor: bitter
   color: "#733333"
   metabolisms:
-    Drink:
+    Digestion:
       # Disgusting!
       effects:
       - !type:SatiateThirst
         factor: -0.5
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -53,12 +53,12 @@
   flavor: bitter
   color: "#815131"
   metabolisms:
-    Drink:
+    Digestion:
       # Disgusting!
       effects:
       - !type:SatiateThirst
         factor: -0.5
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:
@@ -76,12 +76,12 @@
   flavor: bitter
   color: "#737373"
   metabolisms:
-    Drink:
+    Digestion:
       # Disgusting!
       effects:
       - !type:SatiateThirst
         factor: -0.5
-    Poison:
+    Bloodstream:
       effects:
       - !type:HealthChange
         damage:

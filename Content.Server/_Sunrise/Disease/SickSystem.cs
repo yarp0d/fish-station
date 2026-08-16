@@ -328,7 +328,7 @@ public sealed class SickSystem : SharedSickSystem
 
                         foreach (var entity in Lookup.GetEntitiesInRange(uid, 1.0f))
                         {
-                            if (HasComp<HumanoidAppearanceComponent>(entity) && !HasComp<SickComponent>(entity) &&
+                            if (HasComp<HumanoidProfileComponent>(entity) && !HasComp<SickComponent>(entity) &&
                                 !HasComp<DiseaseImmuneComponent>(entity))
                             {
                                 var ev = new ZombificationResistanceQueryEvent(SlotFlags.HEAD | SlotFlags.MASK |
@@ -362,7 +362,7 @@ public sealed class SickSystem : SharedSickSystem
 
                         foreach (var entity in Lookup.GetEntitiesInRange(uid, 1.5f))
                         {
-                            if (HasComp<HumanoidAppearanceComponent>(entity) && !HasComp<SickComponent>(entity) &&
+                            if (HasComp<HumanoidProfileComponent>(entity) && !HasComp<SickComponent>(entity) &&
                                 !HasComp<DiseaseImmuneComponent>(entity))
                             {
                                 var ev = new ZombificationResistanceQueryEvent(SlotFlags.HEAD | SlotFlags.MASK |
@@ -423,7 +423,7 @@ public sealed class SickSystem : SharedSickSystem
 
     private void InfectOnHug(EntityUid infector, EntityUid victim, EntityUid diseaseUid)
     {
-        if (!HasComp<HumanoidAppearanceComponent>(victim) || HasComp<SickComponent>(victim) || HasComp<DiseaseImmuneComponent>(victim))
+        if (!HasComp<HumanoidProfileComponent>(victim) || HasComp<SickComponent>(victim) || HasComp<DiseaseImmuneComponent>(victim))
             return;
 
         if (TryComp<DiseaseRoleComponent>(diseaseUid, out var disease))

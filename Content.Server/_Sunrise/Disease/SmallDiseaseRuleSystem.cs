@@ -49,7 +49,7 @@ public sealed class SmallDiseaseRuleSystem : GameRuleSystem<SmallDiseaseRuleComp
         }
 
         // 1. Find potential victims (Humanoid, Has Mind, Not Dead, Not Sick)
-        var query = EntityQueryEnumerator<HumanoidAppearanceComponent, MindContainerComponent, MobStateComponent, TransformComponent>();
+        var query = EntityQueryEnumerator<HumanoidProfileComponent, MindContainerComponent, MobStateComponent, TransformComponent>();
         var candidates = new List<EntityUid>();
 
         while (query.MoveNext(out var entity, out _, out _, out _, out var xform))

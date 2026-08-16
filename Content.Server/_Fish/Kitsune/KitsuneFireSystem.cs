@@ -13,6 +13,8 @@ using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Audio;
+using Content.Shared.Damage.Prototypes;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server._Fish.Kitsune
 {
@@ -59,7 +61,7 @@ namespace Content.Server._Fish.Kitsune
             // Damage the performer (Self-Damage)
             var damage = new DamageSpecifier()
             {
-                DamageDict = new Dictionary<string, FixedPoint2>
+                DamageDict = new Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>
                 {
                     { "Slash", FixedPoint2.New(9) }
                 }

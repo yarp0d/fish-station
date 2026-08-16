@@ -1447,7 +1447,6 @@
         sound:
           collection: MetalSlam
   - type: PassiveDamage
-    damageCap: 4000
   - type: MeleeWeapon
     attackRate: 0.75
     range: 1.5
@@ -1534,7 +1533,6 @@
         sound:
           collection: MetalSlam
   - type: PassiveDamage
-    damageCap: 4000
   - type: MeleeWeapon
     attackRate: 0.7
     range: 1.5
@@ -1630,7 +1628,6 @@
         sound:
           collection: MetalSlam
   - type: PassiveDamage
-    damageCap: 10000
   - type: MeleeWeapon
     attackRate: 0.75
     range: 0.1

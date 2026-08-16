@@ -1,0 +1,49 @@
+# Compatibility fallbacks for deleted upstream prototypes used by PlanetWar
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: MagazineRPD
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: MagazineBR64
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: MagazineVP78
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: MagazineHIBrowning
+
+- type: entity
+  abstract: true
+  parent: BaseWeaponPistol
+  id: WeaponPistolHIB88M4
+
+- type: entity
+  abstract: true
+  parent: BaseWeaponRifle
+  id: WeaponRifleFamas
+
+- type: entity
+  abstract: true
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubMachineGunMP38
+
+- type: Tag
+  id: MagazineVP78
+- type: Tag
+  id: MagazineBR64
+- type: Tag
+  id: MagazineHIBrowning
+- type: Tag
+  id: MagazineRPD
+
+- type: entity
+  parent: WeaponLaserGun
+  id: WeaponEnergyGunPulseRevolver
+  suffix: compat

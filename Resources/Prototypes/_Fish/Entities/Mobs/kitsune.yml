@@ -3,13 +3,9 @@
   id: MacKitsune
 
   components:
-  - type: HumanoidAppearance
+  - type: HumanoidProfile
     species: Kitsune
-    hideLayersOnEquip:
-    - Hair
-    - Snout
-    - HeadTop
-    - Special
+  - type: SunriseHumanoidProfile
   - type: Inventory
     speciesId: human
   - type: Damageable

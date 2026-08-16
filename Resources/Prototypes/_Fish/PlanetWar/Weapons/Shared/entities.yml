@@ -984,9 +984,8 @@
     #  - state: syringe_base0
   - type: Projectile
     damage:
-      groups:
-        Airloss: -100
       types:
+        Asphyxiation: -100
         Cellular: -50
         Mangleness: -30
   - type: SolutionContainerManager

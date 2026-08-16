@@ -64,14 +64,17 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
         _userDbData.AddOnLoadPlayer(CachePlayerData);
         _userDbData.AddOnPlayerDisconnect(ClearPlayerData);
+        // Fish-start - Moved to BanManager.Sunrise.cs and BanManager.Webhook.cs upstream
+        /*
         _cfg.OnValueChanged(SunriseCCVars.DiscordBanWebhook, OnWebhookChanged, true);
         _cfg.OnValueChanged(CVars.GameHostName, OnServerNameChanged, true);
         _cfg.OnValueChanged(SunriseCCVars.IpWhitelist, OnIpWhitelistChanged, true);
-        // Fish-start - отложенные баны
+        */
         _playerManager.PlayerStatusChanged += OnPlayerStatusChanged;
         // Fish-end
     }
 
+    /*
     private void OnServerNameChanged(string obj)
     {
         _serverName = obj;
@@ -96,8 +99,11 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
         _ipWhitelist = ips;
     }
+    */
 
-    public async Task PardonBan(ICommonSession? admin, int banId, ServerBanDef ban)
+    // Fish-start - PardonBan was moved to BanManager.Sunrise.cs upstream
+    /*
+    public async Task PardonBan(ICommonSession? admin, int banId, BanDef ban)
     {
         await _db.AddServerUnbanAsync(new ServerUnbanDef(banId, admin?.UserId, DateTimeOffset.UtcNow));
 
@@ -110,6 +116,8 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             BanDef = ban
         });
     }
+    */
+    // Fish-end
 
     private async Task CachePlayerData(ICommonSession player, CancellationToken cancel)
     {
