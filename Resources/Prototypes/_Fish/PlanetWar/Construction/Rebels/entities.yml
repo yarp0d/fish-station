@@ -103,7 +103,6 @@
     maxRandomRadius: 0
   - type: TimedDespawn
     lifetime: 0.9
-  - type: Timer
 
 
 - type: entity

@@ -1780,7 +1780,6 @@
     passiveVisibilityRate: -2.00
   - type: TimedDespawn
     lifetime: 3
-  - type: Timer
 
 
 - type: entity

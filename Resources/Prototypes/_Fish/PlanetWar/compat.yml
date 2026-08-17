@@ -21,17 +21,17 @@
 
 - type: entity
   abstract: true
-  parent: BaseWeaponPistol
+  parent: WeaponPistolViper
   id: WeaponPistolHIB88M4
 
 - type: entity
   abstract: true
-  parent: BaseWeaponRifle
+  parent: WeaponRifleLecter
   id: WeaponRifleFamas
 
 - type: entity
   abstract: true
-  parent: BaseWeaponSubMachineGun
+  parent: WeaponSubMachineGunDrozd
   id: WeaponSubMachineGunMP38
 
 - type: Tag
