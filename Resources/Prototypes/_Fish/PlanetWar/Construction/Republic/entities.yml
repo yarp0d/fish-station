@@ -1938,8 +1938,9 @@
   id: CargoTechFabCoreWM
   parent: AmmoTechFabCoreWM
   components:
-    - type: ApcPowerReceiver
-      powerLoad: 800
+    - type: PowerState
+      idlePowerDraw: 150
+      workingPowerDraw: 800
     - type: Destructible
       thresholds:
         - trigger:
@@ -1979,8 +1980,9 @@
     - type: Construction
       graph: CatwalkWMDop
       node: CatwalkWMDop
-    - type: ApcPowerReceiver
-      powerLoad: 800
+    - type: PowerState
+      idlePowerDraw: 150
+      workingPowerDraw: 800
     - type: Destructible
       thresholds:
         - trigger:
@@ -2028,8 +2030,9 @@
     - state: engCorescreen
       map: ["enum.PowerDeviceVisualLayers.Powered"]
       shader: unshaded
-  - type: ApcPowerReceiver
-    powerLoad: 500
+  - type: PowerState
+    idlePowerDraw: 150
+    workingPowerDraw: 500
   - type: Destructible
     thresholds:
       - trigger:
@@ -2068,8 +2071,9 @@
     - state: mechCorescreen
       map: ["enum.PowerDeviceVisualLayers.Powered"]
       shader: unshaded
-  - type: ApcPowerReceiver
-    powerLoad: 5000
+  - type: PowerState
+    idlePowerDraw: 150
+    workingPowerDraw: 5000
   - type: Destructible
     thresholds:
       - trigger:
@@ -2112,8 +2116,9 @@
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: variant-default
       shader: unshaded
-  - type: ApcPowerReceiver
-    powerLoad: 1000
+  - type: PowerState
+    idlePowerDraw: 150
+    workingPowerDraw: 1000
   - type: Destructible
     thresholds:
       - trigger:
