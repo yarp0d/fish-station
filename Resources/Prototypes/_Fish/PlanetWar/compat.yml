@@ -1,22 +1,22 @@
 # Compatibility fallbacks for deleted upstream prototypes used by PlanetWar
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: BaseMagazineLightRifle
   id: MagazineRPD
 
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: BaseMagazineLightRifle
   id: MagazineBR64
 
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: BaseMagazinePistolHighCapacity
   id: MagazineVP78
 
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: BaseMagazinePistol
   id: MagazineHIBrowning
 
 - type: entity
