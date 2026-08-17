@@ -23,7 +23,6 @@ namespace Content.Server._Fish.Kitsune
         [Dependency] private readonly DamageableSystem _damageable = default!;
         [Dependency] private readonly IGameTiming _timing = default!;
         [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
-        [Dependency] private readonly SharedPopupSystem _popup = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
 

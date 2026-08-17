@@ -22,7 +22,7 @@
           conditions:
             - !type:ReagentCondition
               reagent: Vaccine
-              min: 10
+              min: 9 # Fish-edit
 
 - type: reagent
   id: VaccinePlus
@@ -40,7 +40,7 @@
           conditions:
             - !type:ReagentCondition
               reagent: VaccinePlus
-              min: 5
+              min: 4 # Fish-edit
 
 - type: reagent
   id: Immunator
@@ -57,4 +57,4 @@
           conditions:
             - !type:ReagentCondition
               reagent: Immunator
-              min: 5
+              min: 4 # Fish-edit

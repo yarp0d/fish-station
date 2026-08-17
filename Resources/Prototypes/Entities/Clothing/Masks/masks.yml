@@ -348,9 +348,10 @@
   components:
   - type: Sprite
     sprite: Clothing/Mask/sterile.rsi
-  # Fish edit
+  # Fish-start - Защита от болезни 50%
   - type: DiseaseImmuneClothing
     prob: 0.5
+  # Fish-end
   - type: Clothing
     sprite: Clothing/Mask/sterile.rsi
   - type: IngestionBlocker

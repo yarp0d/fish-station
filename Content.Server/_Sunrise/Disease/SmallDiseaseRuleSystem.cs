@@ -19,8 +19,6 @@ public sealed class SmallDiseaseRuleSystem : GameRuleSystem<SmallDiseaseRuleComp
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly ChatSystem _chatSystem = default!;
 
     public override void Initialize()
