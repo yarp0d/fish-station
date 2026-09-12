@@ -588,3 +588,10 @@
   media:
   - url: https://github.com/user-attachments/assets/817bb877-3183-4868-a5b2-b26beee27a75
     description: Content Client_A8R73BiUkI
+- author: Kaiten
+  time: '2026-09-12T21:50:02.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Переработан набор достижений, что палит режим игры (тех кто абузил по попе). Теперь они даются в конце раунда.
+  id: 57
+  url: https://github.com/makura-games/fish-station/pull/447
