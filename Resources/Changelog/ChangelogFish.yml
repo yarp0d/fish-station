@@ -606,3 +606,10 @@
     message: Добавлены газодобытчики.
   id: 58
   url: https://github.com/makura-games/fish-station/pull/448
+- author: ВАШЕ_ИМЯ
+  time: '2026-09-13T14:26:54.0000000+00:00'
+  changes:
+  - type: Fix
+    message: После перезаписи доступов теперь ничего не ломается
+  id: 59
+  url: https://github.com/makura-games/fish-station/pull/449
