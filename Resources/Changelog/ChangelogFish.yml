@@ -637,3 +637,10 @@
     message: пачка фиксов карт
   id: 61
   url: https://github.com/makura-games/fish-station/pull/459
+- author: dan4ikk3
+  time: '2026-09-18T12:41:39.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлен поиск по IC, OCC и должности в манифесте после конца раунда
+  id: 62
+  url: https://github.com/makura-games/fish-station/pull/462
