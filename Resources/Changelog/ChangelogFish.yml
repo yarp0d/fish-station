@@ -669,3 +669,10 @@
     message: вернул в спавнменю вентиляторы
   id: 65
   url: https://github.com/makura-games/fish-station/pull/468
+- author: NekutGit
+  time: '2026-09-22T20:28:39.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Бита Хоумран больше не отбрасывает цели с включёнными магнитными ботинками
+  id: 66
+  url: https://github.com/makura-games/fish-station/pull/454
