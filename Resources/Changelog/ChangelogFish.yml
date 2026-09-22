@@ -662,3 +662,10 @@
     message: Добавление подкрепления ЯО лон оперу.
   id: 64
   url: https://github.com/makura-games/fish-station/pull/464
+- author: erikundel
+  time: '2026-09-22T17:37:39.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: вернул в спавнменю вентиляторы
+  id: 65
+  url: https://github.com/makura-games/fish-station/pull/468
