@@ -699,3 +699,12 @@
     description: IMG_20260923_224428_115
   - url: https://github.com/user-attachments/assets/4a7f7cd0-4171-4f58-8721-20c4094de434
     description: IMG_20260923_224427_719
+- author: Endennsss
+  time: '2026-09-24T19:04:55.0000000+00:00'
+  changes:
+  - type: Add
+    message: Молнии в спавн меню
+  id: 69
+  url: https://github.com/makura-games/fish-station/pull/471
+  media:
+  - url: https://github.com/user-attachments/assets/5779808e-b0c3-4145-9d47-02ce3e365af7
