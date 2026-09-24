@@ -676,3 +676,12 @@
     message: Бита Хоумран больше не отбрасывает цели с включёнными магнитными ботинками
   id: 66
   url: https://github.com/makura-games/fish-station/pull/454
+- author: Endennsss
+  time: '2026-09-24T18:56:10.0000000+00:00'
+  changes:
+  - type: Fix
+    message: Фиксы рекомендуемого лекарства в анализаторе здоровья
+  - type: Fix
+    message: Фикс доступов в ЖК
+  id: 67
+  url: https://github.com/makura-games/fish-station/pull/473
